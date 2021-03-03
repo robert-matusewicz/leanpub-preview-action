@@ -1,0 +1,15 @@
+name: "Leanpub Preview Action"
+description: "A GitHub Action that triggers book preview generation in LeanPub"
+author: "Robert Matusewicz <robert.matusewicz@protonmail.com>"
+inputs:
+  api_key:
+    description: "Your LeanPub API key"
+    required: true
+  book_slug:
+    description:
+      "Your book SLUG. It's the part of the URL for your book after https://leanpub.com/.
+      E.g. if your book is found at https://leanpub.com/your_book, then your book's slug is your_book."
+    required: true
+runs:
+  using: node12
+  main: dist/index.js

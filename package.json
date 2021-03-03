@@ -1,0 +1,17 @@
+{
+  "name": "leanpub-preview-action",
+  "version": "1.0.0",
+  "description": "A Github Actions that triggers preview on LeanPub",
+  "main": "index.js",
+  "repository": "git@github.com:robert-matusewicz/leanpub-preview-action.git",
+  "author": "Robert Matusewicz <robert.matusewicz@protonmail.com>",
+  "license": "MIT",
+  "private": false,
+  "dependencies": {
+    "@actions/core": "^1.2.6",
+    "axios": "^0.21.1"
+  },
+  "devDependencies": {
+    "@vercel/ncc": "^0.27.0"
+  }
+}
